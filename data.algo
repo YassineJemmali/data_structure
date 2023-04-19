@@ -1,0 +1,32 @@
+ALGORITHM data
+VAR
+    tab1[i] : [3,1,7,9] = INTEGER;
+    tab2[j] : [2,4,1,9,3] = INTEGER;
+    ouput : ARRAY_OF type[length];
+    
+BEGIN
+    FOR i FROM 0 TO tab1[i].lenth-1 STEP 1  DO
+        IF (i=tab2[j]) THEN
+            Break
+            END_IF
+            ouput=i
+    END_FOR
+    FOR j FROM 0 TO tab2[j].lenth-1 STEP 1  DO
+        IF (j=tab1[i]) THEN
+            Break
+            END_IF
+            ouput=j
+    END_FOR
+    ouput=i+j
+    Write(ouput)
+END
+
+
+/*
+il faut voir si i est dans un index de j
+si oui break
+si non , ajouter dans ouput.
+
+on doit faire la meme chose pour j.
+
+A la fin, on doit additionné i+j dans un même tableau
